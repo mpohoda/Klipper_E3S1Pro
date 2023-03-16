@@ -39,7 +39,7 @@ Copy klipper.bin via WinSCP from ~/klipper/out to PC.
 
 Move klipper.bin to folder name **STM32F4_UPDATE** on SD card.
 
-Switch off printer, put SD card to SD card slot and switch on printer.
+Switch off printer, put SD card to card slot and switch on printer.
 
 ## Configure
 printer.cfg (for Ender 3 S1 Pro with Sprite Extruder Pro 300℃)
