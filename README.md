@@ -565,7 +565,7 @@ cd ~/klipper/
 make menuconfig
 ```
 
-![image](https://user-images.githubusercontent.com/33594918/225709984-223acc0f-7867-4ecd-a9cd-2f37409d2f23.png)
+![image](https://user-images.githubusercontent.com/33594918/225734204-0951a155-3fd2-49bb-aa9d-1a9856ce0770.png)
 
 ```
 sudo service klipper stop
