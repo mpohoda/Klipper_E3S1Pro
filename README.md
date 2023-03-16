@@ -712,16 +712,25 @@ install_script: scripts/install-mobileraker-companion.sh
 
 # References
 Creality Sonic Pad - Printer Config for Ender 3 S1 Pro [STM32F401]
+
 https://github.com/CrealityOfficial/Creality_Sonic_Pad/blob/main/printer_configrations/printer-Ender3s1pro-401.cfg
 
+
 How to Install MainsailOS on Raspberry Pi
+
 https://3dprintbeginner.com/how-to-install-mainsailos-on-raspberry-pi/
 
+
 How to Install Klipper on Creality Ender 3 S1 Pro: Config and Setup
+
 https://3dprintbeginner.com/install-klipper-on-ender-3-s1-pro/
 
+
 Measuring Resonances via ADXL345
+
 https://www.klipper3d.org/Measuring_Resonances.html
 
+
 RPi microcontroller for ADXL345
+
 https://www.klipper3d.org/RPi_microcontroller.html
