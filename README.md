@@ -32,7 +32,7 @@ make
 ```
 
 ## Flash
-Copy klipper.bin via WinSCP from ~/klipper/out to PC.
+Copy klipper.bin via WinSCP from `~/klipper/out` to PC.
 
 [latest] https://winscp.net/eng/download.php
 
