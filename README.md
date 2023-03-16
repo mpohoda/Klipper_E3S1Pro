@@ -1,13 +1,25 @@
 # Klipper Install and Config for Ender 3 S1 Pro
 ## Install
+Download latest RPi imager 
+https://downloads.raspberrypi.org/imager/imager_latest.exe
+
+
+Choose OS > Other specific-purpose OS > 3D printing > Mainsail OS
+Choose Storage (SD Card)
+
+Setup username, password, wifi, keyboard layout, etc.
+
+**Write** to card
 
 ## Make
+Go to RPi command line via Putty:
+
 ```
 cd ~/klipper
 make menuconfig
 ```
 
-Setup as in picture, then Q(uit) and Y(es) for save.
+Setup as in picture, then Q(uit) and Y(es) for save:
 
 ![image](https://user-images.githubusercontent.com/33594918/225705154-4801901e-5259-4c0f-91ae-55ec7f869e8b.png)
 ```
