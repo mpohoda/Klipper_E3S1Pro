@@ -573,7 +573,7 @@ make flash
 sudo service klipper start
 ```
 
-Add tty privileges for user (pi or other)
+The following command will add the "pi" user to the tty group: (change "pi" to your real user)
 ```
 sudo usermod -a -G tty pi
 ```
