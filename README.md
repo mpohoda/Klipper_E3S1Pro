@@ -731,6 +731,6 @@ Measuring Resonances via ADXL345
 https://www.klipper3d.org/Measuring_Resonances.html
 
 
-RPi microcontroller for ADXL345
+RPi microcontroller for linux (ADXL345)
 
 https://www.klipper3d.org/RPi_microcontroller.html
