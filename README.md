@@ -3,7 +3,20 @@
 
 ## Make
 
+```
+cd ~/klipper
+make menuconfig
+```
+Setup as in picture, then Q(uit) and Y(es) for save.
+![image](https://user-images.githubusercontent.com/33594918/225705154-4801901e-5259-4c0f-91ae-55ec7f869e8b.png)
+```
+make
+```
+
 ## Flash
+Copy klipper.bin via WinSCP from ~/klipper/out to PC
+Move klipper.bin to folder name **STM32F4_UPDATE** on SD card.
+Switch off printer, put SD card to SD card slot and switch on printer.
 
 ## Configure
 printer.cfg (for Ender 3 S1 Pro with Sprite Extruder Pro 300℃)
