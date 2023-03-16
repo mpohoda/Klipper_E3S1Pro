@@ -206,13 +206,13 @@ probe_points:
 #shaper_freq_y = 38.2
 
 [respond]
-default_type: echo
+#default_type: echo
 #   Sets the default prefix of the "M118" and "RESPOND" output to one
 #   of the following:
 #       echo: "echo: " (This is the default)
 #       command: "// "
 #       error: "!! "
-default_prefix: echo:
+#default_prefix: echo:
 #   Directly sets the default prefix. If present, this value will
 #   override the "default_type".
 
