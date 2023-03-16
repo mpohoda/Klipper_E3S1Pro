@@ -594,8 +594,32 @@ cd moonraker-telegram-bot
 ./scripts/install.sh
 ```
 
+create telegram bot
+    This is done by talking to BotFather on telegram. Name the bot, give it a username. You will get a token to control the bot.
+    [url] https://telegram.me/botfather
+
 edit telegram.conf
 ```
+#  Please refer to the wiki(https://github.com/nlef/moonraker-telegram-bot/wiki) for detailed information on how to configure the bot
+
+[bot]
+server: localhost
+bot_token: add_your_token_here
+chat_id: add_your_chat-id_here
+
+[camera]
+host: http://localhost:8080/?action=stream
+
+[progress_notification]
+percent: 5
+height: 5
+time: 5
+
+#[timelapse]
+#cleanup: true
+#height: 0.2
+#time: 5
+#target_fps: 30
 ```
 
 add to moonraker.conf
