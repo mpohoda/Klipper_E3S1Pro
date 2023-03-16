@@ -587,8 +587,27 @@ gpioinfo
 
 ## Plugins
 ### Telegram-Bot
-https://github.com/nlef/moonraker-telegram-bot
+```
+cd ~
+git clone https://github.com/nlef/moonraker-telegram-bot.git
+cd moonraker-telegram-bot
+./scripts/install.sh
+```
 
+edit telegram.conf
+```
+```
+
+add to moonraker.conf
+```
+[update_manager client moonraker-telegram-bot]
+type: git_repo
+path: ~/moonraker-telegram-bot
+origin: https://github.com/nlef/moonraker-telegram-bot.git
+env: ~/moonraker-telegram-bot-env/bin/python
+requirements: scripts/requirements.txt
+install_script: scripts/install.sh
+```
 ### Shell Commands
 ```
 cd ~
@@ -599,6 +618,21 @@ git clone https://github.com/th33xitus/kiauh.git
 ![image](https://user-images.githubusercontent.com/33594918/225716494-316f0b8e-5122-4d17-9275-6058a1ae5968.png)
 
 [4] Advanced > Extensions > [8 or 9] Shell Command
+
+edit shell_command.cfg
+```
+# example
+[gcode_shell_command print_to_file]
+command: sh /home/pi/klipper_config/script.sh
+timeout: 30.
+verbose: True
+
+[gcode_macro GET_TEMP]
+gcode:
+    {% set temp = printer.extruder.temperature %}
+    { action_respond_info("%s" % (temp)) }
+    RUN_SHELL_COMMAND CMD=print_to_file PARAMS={temp}
+```
 
 ### Mobileraker
 ```
