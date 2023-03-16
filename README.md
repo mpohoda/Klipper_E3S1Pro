@@ -3,6 +3,7 @@
 Download latest RPi imager:
 
 [for Windows] https://downloads.raspberrypi.org/imager/imager_latest.exe
+
 [for MacOS] https://downloads.raspberrypi.org/imager/imager_latest.dmg
 
 Choose OS > Other specific-purpose OS > 3D printing > Mainsail OS
