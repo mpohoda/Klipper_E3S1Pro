@@ -1,8 +1,9 @@
 # Klipper Install and Config for Ender 3 S1 Pro
 ## Install
-Download latest RPi imager 
-https://downloads.raspberrypi.org/imager/imager_latest.exe
+Download latest RPi imager:
 
+[for Windows] https://downloads.raspberrypi.org/imager/imager_latest.exe
+[for MacOS] https://downloads.raspberrypi.org/imager/imager_latest.dmg
 
 Choose OS > Other specific-purpose OS > 3D printing > Mainsail OS
 Choose Storage (SD Card)
