@@ -577,3 +577,10 @@ The following command will add the "pi" user to the tty group: (change "pi" to y
 ```
 sudo usermod -a -G tty pi
 ```
+
+Optional: Identify the correct gpiochip
+```
+sudo apt-get install gpiod
+gpiodetect
+gpioinfo
+```
