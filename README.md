@@ -7,6 +7,7 @@ Download latest RPi imager:
 [for MacOS] https://downloads.raspberrypi.org/imager/imager_latest.dmg
 
 Choose OS > Other specific-purpose OS > 3D printing > Mainsail OS
+
 Choose Storage (SD Card)
 
 Setup username, password, wifi, keyboard layout, etc.
@@ -15,6 +16,8 @@ Setup username, password, wifi, keyboard layout, etc.
 
 ## Make
 Go to RPi command line via Putty:
+
+[latest] https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 ```
 cd ~/klipper
@@ -30,6 +33,9 @@ make
 
 ## Flash
 Copy klipper.bin via WinSCP from ~/klipper/out to PC.
+
+[latest] https://winscp.net/eng/download.php
+
 
 Move klipper.bin to folder name **STM32F4_UPDATE** on SD card.
 
