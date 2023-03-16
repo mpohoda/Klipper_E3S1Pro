@@ -587,7 +587,66 @@ gpioinfo
 
 ## Plugins
 ### Telegram-Bot
+https://github.com/nlef/moonraker-telegram-bot
 
 ### Shell Commands
+```
+cd ~
+git clone https://github.com/th33xitus/kiauh.git
+./kiauh/kiauh.sh
+```
+
+![image](https://user-images.githubusercontent.com/33594918/225716494-316f0b8e-5122-4d17-9275-6058a1ae5968.png)
+
+[4] Advanced > Extensions > [8 or 9] Shell Command
 
 ### Mobileraker
+```
+cd ~/
+git clone https://github.com/Clon1998/mobileraker_companion.git
+cd mobileraker_companion
+./scripts/install-mobileraker-companion.sh
+```
+
+edit mobileraker.conf
+```
+[general]
+language: en 
+# one of the supported languages defined in i18n.py#languages (de,en,...)
+# Default: en
+timezone: Europe/Berlin 
+# correct timezone e.g. Europe/Berlin for Berlin time or US/Central. 
+# For more values see https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
+# Default: Tries to use system timezone
+# Optional
+eta_format: %%d.%%m.%%Y, %%H:%%M:%%S
+# Format used for eta and adaptive_eta placeholder variables
+# For available options see https://strftime.org/
+# Note that you will have to escape the % char by using a 2nd one e.g.: %d/%m/%Y -> %%d/%%m/%%Y
+# Default: %%d.%%m.%%Y, %%H:%%M:%%S
+# Optional
+
+# Add a [printer ...] section for every printer you want to add
+[printer <NAME OF YOUR PRINTER: optional>]
+moonraker_uri: ws://127.0.0.1:7125/websocket
+# Define the uri to the moonraker instance.
+# Default value: ws://127.0.0.1:7125/websocket
+# Optional
+moonraker_api_key: False
+# Moonraker API key if force_logins or trusted clients is active!
+# Default value: False
+# Optional
+```
+
+add to moonraker.conf
+```
+[update_manager mobileraker]
+type: git_repo
+path: ~/mobileraker_companion
+origin: https://github.com/Clon1998/mobileraker_companion.git
+primary_branch:main
+managed_services: mobileraker
+env: ~/mobileraker-env/bin/python
+requirements: scripts/mobileraker-requirements.txt
+install_script: scripts/install-mobileraker-companion.sh
+```
