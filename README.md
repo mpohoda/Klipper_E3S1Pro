@@ -584,3 +584,10 @@ sudo apt-get install gpiod
 gpiodetect
 gpioinfo
 ```
+
+## Plugins
+### Telegram-Bot
+
+### Shell Commands
+
+### Mobileraker
