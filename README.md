@@ -540,5 +540,40 @@ PrusaSlicer Start G-Code
 PrusaSlicer End G-Code
 ```
 ```
+### ADXL345 setup
+Wiring diagram
 
+![image](https://user-images.githubusercontent.com/33594918/225709045-1f259db4-2a5b-437c-98df-115e01f85e7c.png)
 
+Software install via Putty
+```
+sudo apt update
+sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
+~/klippy-env/bin/pip install -v numpy
+```
+
+Install rc script
+```
+cd ~/klipper/
+sudo cp ./scripts/klipper-mcu.service /etc/systemd/system/
+sudo systemctl enable klipper-mcu.service
+```
+
+Building the micro-controller code
+```
+cd ~/klipper/
+make menuconfig
+```
+
+![image](https://user-images.githubusercontent.com/33594918/225709984-223acc0f-7867-4ecd-a9cd-2f37409d2f23.png)
+
+```
+sudo service klipper stop
+make flash
+sudo service klipper start
+```
+
+Add tty privileges for user (pi or other)
+```
+sudo usermod -a -G tty pi
+```
