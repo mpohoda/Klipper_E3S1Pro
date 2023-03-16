@@ -596,8 +596,7 @@ cd moonraker-telegram-bot
 
 Create telegram bot
 
-This is done by talking to BotFather on telegram. Name the bot, give it a username. You will get a token to control the bot.
-[url] https://telegram.me/botfather
+This is done by talking to [BotFather](https://telegram.me/botfather) on telegram. Name the bot, give it a username. You will get a token to control the bot.
 
 edit telegram.conf
 ```
