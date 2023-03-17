@@ -363,12 +363,6 @@ gcode:
   G1 X0 Y0 Z10 F4200
   # save_config
 
-[gcode_macro _POWER_OFF_PRINTER]
-gcode:
-  {action_call_remote_method("set_device_power",
-                             device="printer",
-                             state="off")}
-
 [gcode_macro START_PRINT]
 variable_bed_temp: 60
 variable_extruder_temp: 185
