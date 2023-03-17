@@ -1,4 +1,4 @@
-# Klipper Install and Config for Ender 3 S1 Pro
+# Klipper Install and Config for Creality Ender 3 S1 Pro
 ## Install
 Download latest RPi imager:
 
