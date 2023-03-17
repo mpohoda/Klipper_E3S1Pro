@@ -732,9 +732,7 @@ or
 then install libraries
 ```
 sudo apt-get install python3-pip python3-gpiozero python3-serial git
-
 sudo pip3 install multitimer
-
 git clone https://github.com/RobRobM/DWIN_T5UIC1_LCD_E3S1.git
 ```
 
@@ -785,6 +783,10 @@ sudo chmod 644 /lib/systemd/system/simpleLCD.service
 sudo systemctl daemon-reload && sudo systemctl enable simpleLCD.service
 sudo reboot
 ```
+
+If your control wheel is reversed change the encoder_pins in `run.py` to this instead.
+
+`encoder_Pins = (19, 26)`
 
 # References
 Creality Sonic Pad - Printer Config for Ender 3 S1 Pro [STM32F401]
