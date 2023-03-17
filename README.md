@@ -784,6 +784,10 @@ If your control wheel is reversed change the encoder_pins in `run.py` to this in
 `encoder_Pins = (19, 26)`
 
 # Restart klipper.service when Printer is on
+```
+lsusb
+```
+from output `Bus 001 Device 027: ID 1a86:7523 QinHeng Electronics CH340 serial converter` use correct Vendor and Product ID for rule
 
 ```
  sudo nano /etc/udev/rules.d/98-klipper.rules
