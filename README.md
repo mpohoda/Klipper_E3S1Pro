@@ -535,10 +535,15 @@ END_PRINT
 
 PrusaSlicer Start G-Code
 ```
+SET_GCODE_VARIABLE MACRO=START_PRINT VARIABLE=bed_temp VALUE={first_layer_bed_temperature[0]}
+SET_GCODE_VARIABLE MACRO=START_PRINT VARIABLE=extruder_temp VALUE={first_layer_temperature[0]}
+START_PRINT
 ```
 
 PrusaSlicer End G-Code
 ```
+SET_GCODE_VARIABLE MACRO=END_PRINT VARIABLE=machine_depth VALUE={print_bed_max[1]}
+END_PRINT
 ```
 ### ADXL345 setup
 Wiring diagram
