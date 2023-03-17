@@ -725,7 +725,7 @@ in `klipper.service:` add to end of `ExecStart=`
 ```
 -a /tmp/klippy_uds
 ```
-or in env file e.g. `/home/user/printer_data/systemd/klipper.env` to end of command
+or in env file e.g. `~/printer_data/systemd/klipper.env` to end of command
 ```
 -a /home/pi/printer_data/comms/klippy.sock
 ```
