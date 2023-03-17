@@ -783,6 +783,17 @@ If your control wheel is reversed change the encoder_pins in `run.py` to this in
 
 `encoder_Pins = (19, 26)`
 
+# Restart klipper.service when Printer is on
+
+```
+ sudo nano /etc/udev/rules.d/98-klipper.rules
+```
+add to 98-klipper.rules: `SUBSYSTEM=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", ACTION=="add", RUN+="/bin/sh -c '/usr/bin/systemctl restart klipper.service'"`
+
+```
+sudo udevadm control --reload-rules
+```
+
 # References
 Creality Sonic Pad - Printer Config for Ender 3 S1 Pro [STM32F401]
 
