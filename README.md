@@ -742,16 +742,22 @@ git clone https://github.com/RobRobM/DWIN_T5UIC1_LCD_E3S1.git
 Wiring diagram:
 ![image](https://user-images.githubusercontent.com/33594918/225875818-e2fc4e3f-6ef4-445c-84de-d0467756aad5.png)
 
-Display <-> Raspberry Pi GPIO BCM
+**Display <-> Raspberry Pi GPIO BCM**
+
 Rx = GPIO14 (Tx)
+
 Tx = GPIO15 (Rx)
+
 Ent = GPIO13
+
 A = GPIO19
+
 B = GPIO26
+
 Vcc = 2 (5v)
+
 Gnd = 6 (GND)
 
-![image](https://user-images.githubusercontent.com/33594918/225876126-a45fad86-dc6e-441b-ab64-352a526fefa7.png)
 ![image](https://user-images.githubusercontent.com/33594918/225876081-abb26c5c-2b2e-4337-b621-e8781de0d5f7.png)
 ![image](https://user-images.githubusercontent.com/33594918/225875998-b528f705-e4b6-4bee-ab1d-6f16fa9273f6.png)
 ![image](https://user-images.githubusercontent.com/33594918/225876025-646b4f40-90c3-49b3-89db-dc38f844dab2.png)
