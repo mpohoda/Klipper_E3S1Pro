@@ -715,6 +715,56 @@ install_script: scripts/install-mobileraker-companion.sh
 ```
 
 
+# Creality Ender 3 V2 Screen kit for E3S1Pro (DWIN or DACAI)
+In brief, add a line to the /boot/config.txt file to apply a Device Tree overlay.
+```
+dtoverlay=disable-bt
+```
+
+in `klipper.service:` add to end of `ExecStart=` 
+```
+-a /tmp/klippy_uds
+```
+or
+```
+```
+
+then install libraries
+```
+sudo apt-get install python3-pip python3-gpiozero python3-serial git
+
+sudo pip3 install multitimer
+
+git clone https://github.com/RobRobM/DWIN_T5UIC1_LCD_E3S1.git
+```
+
+
+Wiring diagram:
+![image](https://user-images.githubusercontent.com/33594918/225875818-e2fc4e3f-6ef4-445c-84de-d0467756aad5.png)
+
+Display <-> Raspberry Pi GPIO BCM
+Rx = GPIO14 (Tx)
+Tx = GPIO15 (Rx)
+Ent = GPIO13
+A = GPIO19
+B = GPIO26
+Vcc = 2 (5v)
+Gnd = 6 (GND)
+
+![image](https://user-images.githubusercontent.com/33594918/225876126-a45fad86-dc6e-441b-ab64-352a526fefa7.png)
+![image](https://user-images.githubusercontent.com/33594918/225876081-abb26c5c-2b2e-4337-b621-e8781de0d5f7.png)
+![image](https://user-images.githubusercontent.com/33594918/225875998-b528f705-e4b6-4bee-ab1d-6f16fa9273f6.png)
+![image](https://user-images.githubusercontent.com/33594918/225876025-646b4f40-90c3-49b3-89db-dc38f844dab2.png)
+
+To get your API key run:
+```
+~/moonraker/scripts/fetch-apikey.sh
+```
+Edit the file run.py and past your API key
+```
+nano run.py
+```
+
 # References
 Creality Sonic Pad - Printer Config for Ender 3 S1 Pro [STM32F401]
 
@@ -739,3 +789,7 @@ https://www.klipper3d.org/Measuring_Resonances.html
 RPi microcontroller for linux (ADXL345)
 
 https://www.klipper3d.org/RPi_microcontroller.html
+
+DWIN_T5UIC1_LCD_E3S1
+https://github.com/RobRobM/DWIN_T5UIC1_LCD_E3S1 (for "pi" username)
+https://github.com/Buadrabas/DWIN_T5UIC1_LCD_E3S1 (for "USER" username)
