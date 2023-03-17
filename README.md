@@ -740,6 +740,7 @@ git clone https://github.com/RobRobM/DWIN_T5UIC1_LCD_E3S1.git
 
 
 Wiring diagram:
+
 ![image](https://user-images.githubusercontent.com/33594918/225875818-e2fc4e3f-6ef4-445c-84de-d0467756aad5.png)
 
 **Display <-> Raspberry Pi GPIO BCM**
@@ -769,6 +770,20 @@ To get your API key run:
 Edit the file run.py and past your API key
 ```
 nano run.py
+```
+
+Make run.py executable
+```
+sudo chmod +x run.py
+```
+
+Run at boot
+```
+sudo chmod +x run.sh simpleLCD.service
+sudo cp simpleLCD.service /lib/systemd/system/simpleLCD.service
+sudo chmod 644 /lib/systemd/system/simpleLCD.service
+sudo systemctl daemon-reload && sudo systemctl enable simpleLCD.service
+sudo reboot
 ```
 
 # References
