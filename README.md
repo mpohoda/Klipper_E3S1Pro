@@ -684,7 +684,7 @@ eta_format: %%d.%%m.%%Y, %%H:%%M:%%S
 # Optional
 
 # Add a [printer ...] section for every printer you want to add
-[printer <NAME OF YOUR PRINTER: optional>]
+[printer]
 moonraker_uri: ws://127.0.0.1:7125/websocket
 # Define the uri to the moonraker instance.
 # Default value: ws://127.0.0.1:7125/websocket
