@@ -1,1 +1,2 @@
+.env.example -linguist-detectable
 *.md linguist-language=Shell
